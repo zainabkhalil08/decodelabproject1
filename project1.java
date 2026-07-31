@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 
-public class NumberGuessingGame {
+public class project1 {
 
     private static final int MIN_RANGE = 1;
     private static final int MAX_RANGE = 100;
