@@ -118,7 +118,7 @@ public class project1 {
                     System.out.println("Please answer with 'y' or 'n'.");
                 }
             } catch (Exception e) {
-                System.out.println("Something went wrong reading input. Try again.");
+                System.out.println("Something went  reading input. Try again.");
             }
         }
     }
