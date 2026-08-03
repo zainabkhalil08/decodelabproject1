@@ -5,17 +5,17 @@ import java.util.InputMismatchException;
 
 public class project1 {
 
-    private static final int MIN_RANGE = 1;
-    private static final int MAX_RANGE = 100;
-    private static final int MAX_ATTEMPTS = 7;
+    public static final int MIN_RANGE = 1;
+    public static final int MAX_RANGE = 100;
+    public static final int MAX_ATTEMPTS = 7;
 
-    private static final Random random = new Random();
-    private static final Scanner scanner = new Scanner(System.in);
+    public static final Random random = new Random();
+    public static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("=================================");
+        System.out.println(" ");
         System.out.println("     WELCOME TO NUMBER GUESSER    ");
-        System.out.println("=================================");
+        System.out.println(" ");
 
         int totalScore = 0;
         int roundsPlayed = 0;
@@ -32,18 +32,18 @@ public class project1 {
             playAgain = askYesNo("\nDo you want to play another round? (y/n): ");
         }
 
-        System.out.println("\n=================================");
+        System.out.println("\n ");
         System.out.println("           GAME OVER              ");
         System.out.println("Rounds played : " + roundsPlayed);
         System.out.println("Final score   : " + totalScore);
-        System.out.println("=================================");
+        System.out.println(" ");
         System.out.println("Thanks for playing!");
 
         scanner.close();
     }
 
    
-    private static int playRound() {
+    public static int playRound() {
         int secretNumber = MIN_RANGE + random.nextInt(MAX_RANGE - MIN_RANGE + 1);
         int attemptsUsed = 0;
         boolean guessedCorrectly = false;
@@ -92,7 +92,7 @@ public class project1 {
     }
 
    
-    private static int readIntInput(String prompt) {
+    public static int readIntInput(String prompt) {
         while (true) {
             System.out.print(prompt);
             try {
@@ -105,7 +105,7 @@ public class project1 {
     }
 
    
-    private static boolean askYesNo(String prompt) {
+    public static boolean askYesNo(String prompt) {
         while (true) {
             System.out.print(prompt);
             try {
